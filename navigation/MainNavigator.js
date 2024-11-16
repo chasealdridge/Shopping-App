@@ -7,6 +7,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import HelpScreen from '../screens/HelpScreen';
 import ShopViewScreen from '../screens/ShopViewScreen';
 import HomeScreen from '../screens/HomeScreen';
+import ShopNavigator from './ShopNavigator';
 
 //const Tab = createBottomTabNavigator();
 const Tab = createMaterialBottomTabNavigator();
@@ -28,7 +29,7 @@ export default function MainNavigator() {
       
       <Tab.Screen
         name='ShopView'
-        component={ShopViewScreen}
+        component={ShopNavigator}
         options={{
           tabBarLabel: 'ShopView',
           tabBarIcon: ({ color, size }) => (
